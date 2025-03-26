@@ -1,0 +1,28 @@
+{
+  "name": "progressive-enhancement",
+  "version": "1.0.0",
+  "description": "Verschillende componenten bouwen volgens het principe van Progressive Enhancement",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saif8599/progressive-enhancement.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saif8599/progressive-enhancement/issues"
+  },
+  "homepage": "https://github.com/Saif8599/progressive-enhancement#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "liquidjs": "^10.21.0"
+  }
+}
