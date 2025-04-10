@@ -2,9 +2,9 @@
 
 # Progressive Enhancement
 
-Een oefening in het ontwerpen en bouwen van websites volgens het principe van Progressive Enhancement
+Een oefening in het ontwerpen en bouwen van UI components volgens het principe van Progressive Enhancement
 
-In het college _S09W2-01-Progressive-Enhancement_ wordt behandeld wat Progressive Enhancement is.
+In het college _S09W2-01-Progressive-Enhancement_ wordt behandeld wat Progressive Enhancement is, en wordt deze deeltaak uitgelegd.
 
 
 
@@ -18,7 +18,8 @@ Het doel van deze opdracht is te leren hoe je een website kan ontwerpen en maken
 
 ### Progressive enhancement
 
-Progressive Enhancement is een _(coding) strategie_, waarmee je er voor kunt zorgen dat je website het altijd doet, voor iedereen:
+Progressive Enhancement is een _(coding) strategie_, waarmee je er voor kunt zorgen dat je website het altijd doet, voor iedereen.
+Bouw een website op in lagen, zodat een browser kan 'terug vallen' naar een werkende versie als een CSS- of JS-techniek niet wordt ondersteund: 
 
 1) Bepaal eerst de _core functionality_ van wat je gaat maken
 2) Bouw die functionaliteit met de _simpelste techniek_ (meestal HTML, met een klein beetje Mobile First CSS voor de huisstijl)
@@ -41,7 +42,7 @@ In de HTML van elk component staan wat hints en content die je nodig hebt.
 
 ### UI componenten
 
-Maak minimaal 3 van onderstaande user interface componenten: 
+Maak ~~minimaal 3~~ in sprint 9, 10 en 11 alle user interface componenten: 
 
 - [Veelgestelde vragen](https://fdnd-task.github.io/progressive-enhancement/faq.html)
 - [Switch control](https://fdnd-task.github.io/progressive-enhancement/switch.html)
@@ -90,6 +91,7 @@ Strategiën voor verschillende “features”:
 - [@supports in CSS @ MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
 - [Implementing feature detection @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection)
 - [Progressive Enhancement @ MDN](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement)
+- [Progressive Enhancement Resources](https://github.com/voorhoede/progressive-enhancement-resources)
 
 
 ### Inspiratie
