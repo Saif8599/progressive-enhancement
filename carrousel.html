@@ -9,7 +9,89 @@
       rel="stylesheet"
     />
     <link href="assets/styles.css" rel="stylesheet" />
+    <style>
+      .carousel-container {
+        width: 100%;
+        margin: 0 auto;
+      }
 
+      .slides-wrapper {
+        display: flex;
+        width: 100%;
+        overflow: scroll;
+
+        /* Scroll smooth op mobile */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      }
+
+      .slide {
+        min-width: 80%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        scroll-snap-align: center; /* Scroll stopt op juiste punt */
+      }
+
+      /* Verstop scrollbar*/
+      .slides-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+
+      .carousel-nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .nav-button {
+        padding: 4px 16px;
+        border: 1px solid #2c1b5a;
+        background-color: #00000080;
+        color: white;
+        text-decoration: none;
+        border-radius: 16px;
+
+        &:hover {
+          background-color: #f7959580;
+        }
+
+        &:active {
+          transform: translateY(5px);
+        }
+      }
+
+      /* Achtergrondkleuren voor de slides */
+      #slide1 {
+        background-color: #ff5733;
+      }
+      #slide2 {
+        background-color: #33ff57;
+      }
+      #slide3 {
+        background-color: #3357ff;
+      }
+      #slide4 {
+        background-color: #f033ff;
+      }
+      #slide5 {
+        background-color: #ff33f0;
+      }
+      #slide6 {
+        background-color: #33fff0;
+      }
+      #slide7 {
+        background-color: #f0ff33;
+      }
+      #slide8 {
+        background-color: #8a33ff;
+      }
+    </style>
     <script type="module">
       /* Schrijf hier eventueel je client-side JavaScript */
     </script>
@@ -63,6 +145,8 @@
       </div>
 
       <div class="carousel-nav">
+        <a href="#slide8" class="nav-button next">Vorige</a>
+
         <a href="#slide1" class="nav-button">1</a>
         <a href="#slide2" class="nav-button">2</a>
         <a href="#slide3" class="nav-button">3</a>
@@ -71,6 +155,8 @@
         <a href="#slide6" class="nav-button">6</a>
         <a href="#slide7" class="nav-button">7</a>
         <a href="#slide8" class="nav-button">8</a>
+
+        <a href="#slide2" class="nav-button back">Volgende</a>
       </div>
     </div>
 
