@@ -1,24 +1,68 @@
-<!doctype html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Veelgestelde vragen / Progressive Enhancement / FDND</title>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-		<link href="assets/styles.css" rel="stylesheet">
-		<style>
-			/* Schrijf hier gewoon je CSS voor dit component */
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Veelgestelde vragen / Progressive Enhancement / FDND</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/styles.css" rel="stylesheet" />
+    <style>
+      .faq {
+        max-width: 800px;
+        padding: 20px;
+      }
 
-			/* Hint: Dit component kun je volledig met HTML en CSS bouwen */
+      details {
+        border: 1px solid #000000;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+      }
 
-			/* Hint: Denk aan de states van het component; deze kan open en dicht zijn */
-		</style>
-	</head>
-	<body>
-		<h1>Veelgestelde vragen</h1>
+      summary {
+        padding: 10px 15px;
+        background: #f5f5f5;
+        cursor: pointer;
+        outline: none;
+      }
 
+      summary:hover {
+        background: #e9e9e9;
+      }
 
-		<!-- Content (waar nog wat HTML omheen moet 😄):
+      p {
+        padding: 15px;
+        margin: 0;
+      }
+
+      .color-1[open] {
+        background: pink;
+        summary {
+          background: pink;
+        }
+      }
+
+      .color-2[open] {
+        background: yellow;
+
+        summary {
+          background: yellow;
+        }
+      }
+
+      .color-3[open] {
+        background: red;
+
+        summary {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Content (waar nog wat HTML omheen moet 😄):
 		Wat is frontend development?
 		Een frontend developer ontwerpt en bouwt websites in HTML, CSS en JavaScript. Deze frontend talen leer je bij ons, je hebt dus geen voorkennis nodig.
 
@@ -30,13 +74,56 @@
 		Na afronding van deze tweejarige hbo-opleiding, krijg je een wettelijk erkend hbo-diploma met de graad Associate degree. Met dit Ad-diploma kun je direct aan de slag in het werkveld of doorstromen naar de bacheloropleiding Communication and Multimedia Design (CMD).
 		-->
 
+    <div class="faq">
+      <h1>Veelgestelde vragen</h1>
 
-		<!-- Hint: Dit stukje HTML geeft het misschien al weg :) -->
-		<details open>
-			<summary>Demo video</summary>
-			<video src="assets/faq.mp4" width="765" height="769" controls muted autoplay loop>
-				<a href="assets/faq.mp4">assets/faq.mp4</a>
-			</video>
-		</details>
-	</body>
+      <details class="color-1">
+        <summary>Wat is frontend development?</summary>
+        <p>
+          Een frontend developer ontwerpt en bouwt websites in HTML, CSS en
+          JavaScript. Deze frontend talen leer je bij ons, je hebt dus geen
+          voorkennis nodig.
+        </p>
+      </details>
+
+      <details class="color-2">
+        <summary>Moet ik al kunnen coderen?</summary>
+        <p>
+          Nee, je hebt helemaal geen voorkennis nodig om te beginnen aan deze
+          opleiding, we kunnen je alles leren! Als je wel al voorkennis hebt, is
+          dat alleen maar goed, dan kunnen we je helpen je skills te verbeteren
+          en te verdiepen in de stof.
+        </p>
+      </details>
+
+      <details class="color-3">
+        <summary>Wat is een Associate Degree?</summary>
+        <p>
+          Een Associate degree-opleiding is een tweejarige hbo-opleiding op
+          niveau 5. Een Ad slaat een brug tussen het mbo-4 (niveau 4) en een
+          hbo-bachelor (niveau 6). Met een Associate degree kies je voor een
+          praktijkgerichte hbo-opleiding; je wordt oplegeid voor een beroep dat
+          aansluit bij de praktijk.
+        </p>
+      </details>
+    </div>
+
+    <!-- Hint: Dit stukje HTML geeft het misschien al weg :) -->
+    <details open>
+      <summary>Demo video</summary>
+      <video
+        src="assets/faq.mp4"
+        width="765"
+        height="769"
+        controls
+        muted
+        autoplay
+        loop
+      >
+        <a href="assets/faq.mp4">assets/faq.mp4</a>
+      </video>
+    </details>
+  </body>
 </html>
+
+<script></script>
